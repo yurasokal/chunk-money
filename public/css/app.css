@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f6f6f6;
+}
+
+html,
+body,
+ul,
+li,
+button,
+input,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.site {
+  display: flex;
+  grid-template-rows: repeat(2, 1fr, 2fr);
+}
+
+.nav {
+  background: #0364ff;
+  color: #fff;
+  position: fixed;
+  height: 100%;
+  width: 270px;
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 96px;
+}
+.nav__item {
+  padding: 16px 19px;
+  margin: 0 16px;
+  transition: all 0.25s;
+  border-radius: 15px;
+}
+.nav__item:hover {
+  transition: width 2s;
+  background: #0500ff;
+  border-radius: 15px;
+}
+.nav__link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.main {
+  width: 100%;
+  margin-left: 270px;
+}
+
+.createAccount__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 116px 86px 167px;
+}
+.createAccount__img {
+  max-height: 503px;
+  max-height: 483px;
+}
+
+@media screen and (max-width: 1200px) {
+  .createAccount__wrapper {
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .createAccount__photo {
+    display: none;
+  }
+}
+.logIn__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 116px 86px 167px;
+}
+.logIn__img {
+  max-height: 483px;
+  max-height: 483px;
+}
+
+@media screen and (max-width: 1200px) {
+  .logIn__wrapper {
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .logIn__photo {
+    display: none;
+  }
+}
+.forgotPassword__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 116px 86px 167px;
+}
+.forgotPassword__img {
+  max-height: 483px;
+  max-height: 483px;
+}
+
+@media screen and (max-width: 1200px) {
+  .forgotPassword__wrapper {
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .forgotPassword__photo {
+    display: none;
+  }
+}
+.resetPassword__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 116px 86px 167px;
+}
+.resetPassword__img {
+  max-height: 483px;
+  max-height: 483px;
+}
+
+@media screen and (max-width: 1200px) {
+  .resetPassword__wrapper {
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .resetPassword__photo {
+    display: none;
+  }
+}
+.newPassword__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 116px 86px 167px;
+}
+.newPassword__img {
+  max-height: 483px;
+  max-height: 483px;
+}
+
+@media screen and (max-width: 1200px) {
+  .newPassword__wrapper {
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .newPassword__photo {
+    display: none;
+  }
+}
+.form {
+  max-width: 346px;
+  min-width: 300px;
+}
+.form__checkboxWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+}
+.form__item {
+  border: 1px solid #AEB3CD;
+  border-radius: 15px;
+  padding: 13px 15px;
+  margin-bottom: 20px;
+}
+.form__link {
+  color: #0364ff;
+}
+.form__link-apper {
+  margin-bottom: 8px;
+}
+.form__forgotPassword {
+  color: #0364ff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+.form__heading {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form__text {
+  margin-bottom: 20px;
+}
+.form__checkbox {
+  display: flex;
+  gap: 20px;
+}
+.form__terms {
+  display: flex;
+  flex-direction: column;
+  list-style: inside;
+  gap: 8px;
+}
+.form__terms, .form__text, .form__rememberMe, .form__goToSignIn, .form__goToCreateAccount {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #535875;
+}
+.form__goToSignIn, .form__goToCreateAccount {
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .form__heading {
+    margin-top: 100px;
+  }
+}
+.button {
+  display: block;
+  padding: 15px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  background: #0364ff;
+  transition: background-color 0.5s;
+}
+.button:hover {
+  border: 1px solid #535875;
+  color: #0364ff;
+  background-color: #fff;
+}

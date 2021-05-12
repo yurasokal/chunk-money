@@ -1,0 +1,80 @@
+.form {
+    max-width: 346px;
+    min-width: 300px;
+
+    &__checkboxWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        border: 1px solid #AEB3CD;
+        border-radius: 15px;
+        padding: 13px 15px;
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        color: $main-color;
+
+        &-apper {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__forgotPassword {
+        color: $main-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0;
+    }
+
+    &__heading {
+        @include heading-text;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+    }
+
+    &__checkbox {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__terms {
+        display: flex;
+        flex-direction: column;
+        list-style: inside;
+        gap: 8px;
+    }
+
+    &__terms,
+    &__text,
+    &__rememberMe,
+    &__goToSignIn,
+    &__goToCreateAccount {
+        @include form-text;
+    }
+
+    &__goToSignIn,
+    &__goToCreateAccount {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: $optimizing-standart-screen-breakpoint) {
+    .form {
+        &__heading {
+            margin-top: 100px;
+        }
+    }
+}

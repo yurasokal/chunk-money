@@ -1,0 +1,31 @@
+.createAccount {
+
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 116px 86px 167px;
+    }
+
+    &__img {
+        // max-width: 300px;
+        // max-width: 300px;
+        max-height: 503px;
+        max-height: 483px;
+    }
+}
+
+@media screen and (max-width: $optimizing-standart-screen-breakpoint) {
+    .createAccount {
+
+        &__wrapper {
+            padding: 0;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        &__photo {
+            display: none;
+        }
+    }
+}
