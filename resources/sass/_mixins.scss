@@ -22,3 +22,12 @@
     text-align: left;
     color: $text-color;
 }
+
+@mixin table-text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0px;
+    color: $text-color;
+}

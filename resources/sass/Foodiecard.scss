@@ -1,0 +1,218 @@
+.foodie {
+    background: #25b989;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "foodie__map foodie__home";
+
+    &__map {
+        height: 100vh;
+    }
+
+    &__home {
+        background: #fff;
+    }
+
+    &__googleMap {
+        width: 100%;
+    }
+
+    &__logo {
+        padding-top: 50px;
+        padding-right: 50px;
+        text-align: right;
+    }
+
+    &__signUp {
+        display: flex;
+        padding-left: 123px;
+        padding-top: 80px;
+        // position: relative;
+
+        // ::after {
+        //     content:"";
+        //     position: absolute;
+        //     bottom: -97px;
+        //     left: -370px;
+        //     right: 0;
+        //     height: 1em;
+        //     border-top: 1px solid black;
+        //     z-index: -1;
+        //     // width: 500px;
+        // }
+    }
+
+    &__join {
+        max-width: 510px;
+    }
+
+    &__heading {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 79px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 47px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    &__button {
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 170px;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 17px 110px;
+        color: #fff;
+        background-color: #25b989;
+        ;
+        transition: background-color 0.5s;
+
+        &:hover {
+            background-color: #056b4b;
+        }
+    }
+
+    &__card {
+        position: relative;
+        left: -20px;
+        top: 30px;
+        z-index: 1;
+    }
+
+    &__bigYellow {
+        position: absolute;
+        left: 20px;
+        // right: 20px;
+        top: -30px;
+    }
+
+    &__smallGreen {
+        position: absolute;
+        left: 420px;
+        top: -30px;
+    }
+
+    &__smallYellow {
+        position: absolute;
+        left: 500px;
+        top: 80px;
+    }
+
+    &__secondBlock {
+        padding-left: 123px;
+    }
+
+    &__whoWe {
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 35px;
+        font-size: 31px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 47px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    &__img {
+        height: 177px;
+        width: 212px;
+    }
+
+    &__blocksContent {
+        font-family: 'Poppins', sans-serif;
+        max-width: 555px;
+    }
+
+    &__blocksHeading {
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000;
+    }
+
+    &__blocksText {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    &__insideBlock {
+        box-shadow: 3.28678px 3.28678px 9.03863px rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+        gap: 40px;
+        padding: 50px 0 60px 80px;
+    }
+
+    &__joinNow {
+        display: flex;
+        margin-left: 169px;
+        margin-top: 830px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &__button {
+        &--orange {
+            background: #f95b00;
+            margin: 0;
+        }
+    }
+
+    &__phonesHeading {
+        font-family: Poppins;
+        font-size: 49px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 74px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000;
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+
+    &__phonesText {
+        font-family: Poppins;
+        font-size: 31px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 46px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 20px;
+        max-width: 340px;
+    }
+
+    &__phonesImg {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .foodie {
+        .signUp {
+            flex-direction: column;
+        }
+    }
+}

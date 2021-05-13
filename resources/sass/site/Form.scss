@@ -8,13 +8,17 @@
         justify-content: space-between;
     }
 
+    &__rememberMe {
+        margin-left: -20px;
+    }
+
     &__inputs {
         display: flex;
         flex-direction: column;
     }
 
     &__item {
-        border: 1px solid #AEB3CD;
+        border: 1px solid #aeb3cd;
         border-radius: 15px;
         padding: 13px 15px;
         margin-bottom: 20px;
@@ -31,9 +35,9 @@
     &__forgotPassword {
         color: $main-color;
         font-size: 14px;
-        font-weight: 400;
         line-height: 30px;
         letter-spacing: 0;
+        margin-top: 8px;
     }
 
     &__heading {
@@ -42,22 +46,27 @@
     }
 
     &__text {
-        margin-bottom: 20px;
+        margin-bottom: 12px;
     }
 
     &__checkbox {
         display: flex;
-        gap: 20px;
+        gap: 30px;
+        margin-top: 8px;
     }
 
     &__terms {
         display: flex;
         flex-direction: column;
-        list-style: inside;
-        gap: 8px;
+        gap: 16px;
+    }
+
+    &__termsList {
+        line-height: 0;
     }
 
     &__terms,
+    &__termsList,
     &__text,
     &__rememberMe,
     &__goToSignIn,

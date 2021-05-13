@@ -3,9 +3,13 @@
 .nav {
     background: $main-color;
     color: $white-color;
-    position: fixed;
     height: 100%;
     width: 270px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
 
     &__list {
         list-style: none;
@@ -13,13 +17,15 @@
         flex-direction: column;
         justify-content: space-between;
         margin-top: 96px;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
     &__item {
-        padding: 16px 19px;
-        margin: 0 16px;
         transition: all 0.25s;
         border-radius: 15px;
+        // margin: 0 16px;
+        // padding: 16px 19px;
 
         &:hover {
             transition: width 2s;
@@ -29,6 +35,23 @@
     }
 
     &__link {
+        display: flex;
+        gap: 10px;
+        padding: 16px;
+        // padding: 16px 60px 20px 16px;
+        // margin: 19px 16px;
         @include nav-text;
+
+        &-overview {
+            margin-left: 2px;
+        }
+    }
+
+    &__text {
+        margin-top: 3px;
+
+        &-overview {
+            margin-left: 2px;
+        }
     }
 }

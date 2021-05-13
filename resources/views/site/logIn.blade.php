@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -15,115 +15,64 @@
 
     </head>
     <body class="antialiased">
-        <section class="createAccount">
-            <div class="createAccount__wrapper">
-                <form class="createAccount__form form">
-                    <div class="form__heading">Create Account</div>
-                    <div class="form__inputs">
-                        <input
-                            class="form__item"
-                            type="text"
-                            name="name"
-                            placeholder="Full Name"
-                        >
-                        <input
-                            class="form__item"
-                            type="email"
-                            name="email"
-                            placeholder="Email"
-                        >
-                        <input
-                            class="form__item"
-                            type="password"
-                            name="password"
-                            placeholder="Password"
-                        >
-                        <input
-                            class="form__item"
-                            type="password"
-                            name="password"
-                            placeholder="Confirm password"
-                        >
-                        <input
-                            class="form__item"
-                            type="number"
-                            name="mobile"
-                            placeholder="Mobile number"
-                        >
-                    </div>
-                    <div class="form__text">By checking the box you consent to our:</div>
+    <section class="logIn">
+        <div class="logIn__wrapper">
+            <form class="logIn__form form">
+                <h2 class="form__heading">Sign in to Chunk</h2>
+                <div class="form__inputs">
+                    <input
+                        class="form__item"
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                    >
+                    <input
+                        class="form__item"
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                    >
+                </div>
+                <div class="form__checkboxWrapper">
                     <div class="form__checkbox">
                         <input
-                            id="form__terms"
-                            class="form__checkbox"
+                            id="form__remember"
+                            class="form__checkbox checkbox"
                             type="checkbox"
                             name="terms"
                             placeholder="Mobile number"
                         >
-                        <div class="form__terms">
-                            <label for="form__esign">
-                                <a
-                                    rel="noopener noreferrer"
-                                    href="https://helpx.adobe.com/reader/using/sign-pdfs.html"
-                                    target="_blank"
-                                    class="form__link"
-                                >
-                                    E-sign
-                                </a>
-                                    to receive document electronically.
-                            </label><br>
-                            <label for="form__privacy">
-                            <a
-                                rel="noopener noreferrer"
-                                href="https://www.apple.com/legal/internet-services/itunes/us/terms.html"
-                                target="_blank"
-                                class="form__link"
-                            >
-                                Terms of use
-                            </a>
-                            and
-                            <a
-                                rel="noopener noreferrer"
-                                href="https://www.apple.com/legal/internet-services/itunes/us/terms.html"
-                                target="_blank"
-                                class="form__link"
-                            >
-                                privacy policy,
-                            </a>
-                            as well as acknowledge receipt of our
-                            <a
-                                rel="noopener noreferrer"
-                                href="https://www.apple.com/legal/internet-services/itunes/us/terms.html"
-                                target="_blank"
-                                class="form__link"
-                            >
-                            privacy notice.
-                            </a>
-                            </label><br>
-                        </div>
+                        <label for="form__remember" class="form__rememberMe">Remember me</label>
                     </div>
-
-                    <button class="form__button button">Sign Up</button>
-                    <div class="form__goToSignIn">
-                        Already have an account?
-                        <a
-                            rel="noopener noreferrer"
-                            href="https://login.yahoo.com/?.src=&.intl=us&.lang=en-US&.do"
-                            target="_blank"
-                            class="form__link"
-                        >
-                        Sign in
-                        </a>
-                    </div>
-                </form>
-                <div class="createAccount__photo">
-                    <img
-                        class="createAccount__img"
-                        src="{{ asset('/images/createAccount.png') }}"
-                        alt="icon tbd"
+                    <a
+                        rel="noopener noreferrer"
+                        href="/site/forgotPassword"
+                        class="form__forgotPassword"
                     >
+                        Forgot password?
+                    </a>
                 </div>
+
+                <button class="form__button button">Sign In</button>
+                <div class="form__goToCreateAccount">
+                    Don’t have an account?
+                    <a
+                        rel="noopener noreferrer"
+                        href="/site/createAccount"
+                        class="form__link"
+                    >
+                    Create Account
+                    </a>
+                </div>
+            </form>
+            <div class="logIn__photo">
+                <img
+                    class="logIn__img"
+                    src="{{ asset('/images/signIn.png') }}"
+                    alt="icon tbd"
+                >
             </div>
-        </section>
+        </div>
+    </section>
     </body>
-</html> -->
+</html>
