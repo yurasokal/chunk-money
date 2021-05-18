@@ -25,7 +25,15 @@
         "sass-loader": "^11.0.1"
     },
     "dependencies": {
+        "@material-ui/core": "^4.11.4",
+        "es6-promise": "^4.2.8",
+        "faker": "^5.5.3",
+        "isomorphic-fetch": "^3.0.0",
         "node-sass": "^5.0.0",
-        "prop-types": "^15.7.2"
+        "prop-types": "^15.7.2",
+        "react-image-gallery": "^1.0.9",
+        "react-redux": "^7.2.4",
+        "redux": "^4.1.0",
+        "simple-react-lightbox": "^3.6.6"
     }
 }

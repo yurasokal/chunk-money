@@ -1,0 +1,251 @@
+.overview {
+    // margin: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 30px;
+    border-radius: 20px;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+
+    &__last30days {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__last30daysWrapper {
+        gap: 30px;
+        background-color: $white-color;
+        width: 719px;
+        height: 199px;
+        border-radius: 20px;
+    }
+
+    &__last30daysHeading {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    &__spending,
+    &__income,
+    &__transfer {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        background: #f5f9ff;
+        border-radius: 20px;
+        width: 210px;
+        height: 114px;
+        margin: 20px;
+    }
+
+    &__total {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__totalWrapper {
+        gap: 30px;
+        background-color: $white-color;
+        width: 719px;
+        height: 154px;
+        border-radius: 20px;
+    }
+
+    &__assets,
+    &__debet,
+    &__worth {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        background: #f5f9ff;
+        border-radius: 20px;
+        width: 210px;
+        height: 114px;
+        margin: 20px;
+    }
+
+
+
+    &__spendingAndIncomeHistory {
+        background-color: $white-color;
+        border-radius: 20px;
+        width: 714px;
+        height: 400px;
+        background: linear-gradient(180deg, rgba(0, 172, 121, 0.2) 0%, rgba(0, 172, 121, 0) 80.11%);
+        padding: 30px 20px;
+    }
+
+    &__spendingAndIncome {
+        background-color: $white-color;
+        border-radius: 20px;
+        width: 714px;
+        height: 400px;
+        background: linear-gradient(180deg, rgba(3, 100, 255, 0.2) 0%, rgba(3, 100, 255, 0) 80.11%);
+        padding: 30px 20px;
+    }
+
+    &__keyIncomeHighlights {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background-color: $white-color;
+        width: 361px;
+        height: 584px;
+        border-radius: 20px;
+    }
+
+    &__incomeHeading {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    &__incomeBlock {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "overview__numberOfIncome overview__income2020"
+            "overview__largestIncome overview__forcastedIncome";
+    }
+
+    &__numberOfIncome {
+        text-align: center;
+        margin-left: 20px;
+        width: 151px;
+        height: 211px;
+        background-color: #f1fff8;
+        border-radius: 30px;
+    }
+
+    &__income2020 {
+        text-align: center;
+        width: 151px;
+        height: 211px;
+        background-color: #f2f6ff;
+        border-radius: 30px;
+    }
+
+    &__largestIncome {
+        text-align: center;
+        margin-left: 20px;
+        width: 151px;
+        height: 211px;
+        background-color: #fffbf0;
+        border-radius: 30px;
+    }
+
+    &__forcastedIncome {
+        text-align: center;
+        width: 151px;
+        height: 211px;
+        background-color: #fff7f5;
+        border-radius: 30px;
+    }
+
+    &__button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0px;
+        text-align: center;
+
+        width: 100px;
+
+        text-decoration: none;
+        cursor: pointer;
+        color: $main-color;
+
+        // border: 1px solid transparent;
+        border-radius: 15px;
+        background-color: $white-color;
+
+        transition: background-color 0.5s;
+
+        &:hover {
+            // border: 1px solid $text-color;
+            color: $white-color;
+            background-color: $main-color;
+        }
+
+
+    }
+
+    &__godlenNuggets {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background-color: $white-color;
+        width: 361px;
+        height: 629px;
+        border-radius: 20px;
+    }
+
+    &__godlenHeading {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    &__godlenContent {
+        text-align: center;
+    }
+
+    &__goldImage {
+        margin-top: 70px;
+    }
+
+    // &__goldImage1 {
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     z-index: 1;
+    // }
+
+    &__godlenText {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 19px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: $text-color;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    &__godlenPrice {
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 40px;
+        letter-spacing: 0px;
+        text-align: center;
+
+        // &--monet {
+        //     font-size: 22px;
+        //     font-style: normal;
+        //     font-weight: 300;
+        //     line-height: 26px;
+        //     letter-spacing: 0px;
+        //     text-align: center;
+        // }
+    }
+}
+
+

@@ -1,0 +1,32 @@
+.users {
+  padding-left: 40px;
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+  }
+  
+  &__link {
+    display: flex;
+    border: 1px solid rgb(132, 70, 247);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    max-width: 350px;
+    padding: 5px 10px;
+  }
+
+  &__image {
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .users {
+    &__list {
+      grid-template-columns: repeat(1,2fr);
+    }
+  }
+}

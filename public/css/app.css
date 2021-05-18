@@ -12,24 +12,133 @@ body {
 
 html,
 body,
-ul,
-li,
-button,
-input,
-textarea,
+div,
+span,
+applet,
+object,
+iframe,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .nav {
@@ -92,6 +201,197 @@ h6 {
   width: 100%;
 }
 
+.overview {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 30px;
+  border-radius: 20px;
+}
+.overview__left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+.overview__right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+.overview__last30days {
+  display: flex;
+  flex-direction: row;
+}
+.overview__last30daysWrapper {
+  gap: 30px;
+  background-color: #fff;
+  width: 719px;
+  height: 199px;
+  border-radius: 20px;
+}
+.overview__last30daysHeading {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.overview__spending, .overview__income, .overview__transfer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background: #f5f9ff;
+  border-radius: 20px;
+  width: 210px;
+  height: 114px;
+  margin: 20px;
+}
+.overview__total {
+  display: flex;
+  flex-direction: row;
+}
+.overview__totalWrapper {
+  gap: 30px;
+  background-color: #fff;
+  width: 719px;
+  height: 154px;
+  border-radius: 20px;
+}
+.overview__assets, .overview__debet, .overview__worth {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background: #f5f9ff;
+  border-radius: 20px;
+  width: 210px;
+  height: 114px;
+  margin: 20px;
+}
+.overview__spendingAndIncomeHistory {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 714px;
+  height: 400px;
+  background: linear-gradient(180deg, rgba(0, 172, 121, 0.2) 0%, rgba(0, 172, 121, 0) 80.11%);
+  padding: 30px 20px;
+}
+.overview__spendingAndIncome {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 714px;
+  height: 400px;
+  background: linear-gradient(180deg, rgba(3, 100, 255, 0.2) 0%, rgba(3, 100, 255, 0) 80.11%);
+  padding: 30px 20px;
+}
+.overview__keyIncomeHighlights {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #fff;
+  width: 361px;
+  height: 584px;
+  border-radius: 20px;
+}
+.overview__incomeHeading {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.overview__incomeBlock {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  grid-template-rows: auto;
+  grid-template-areas: "overview__numberOfIncome overview__income2020" "overview__largestIncome overview__forcastedIncome";
+}
+.overview__numberOfIncome {
+  text-align: center;
+  margin-left: 20px;
+  width: 151px;
+  height: 211px;
+  background-color: #f1fff8;
+  border-radius: 30px;
+}
+.overview__income2020 {
+  text-align: center;
+  width: 151px;
+  height: 211px;
+  background-color: #f2f6ff;
+  border-radius: 30px;
+}
+.overview__largestIncome {
+  text-align: center;
+  margin-left: 20px;
+  width: 151px;
+  height: 211px;
+  background-color: #fffbf0;
+  border-radius: 30px;
+}
+.overview__forcastedIncome {
+  text-align: center;
+  width: 151px;
+  height: 211px;
+  background-color: #fff7f5;
+  border-radius: 30px;
+}
+.overview__button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+  width: 100px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #0364ff;
+  border-radius: 15px;
+  background-color: #fff;
+  transition: background-color 0.5s;
+}
+.overview__button:hover {
+  color: #fff;
+  background-color: #0364ff;
+}
+.overview__godlenNuggets {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #fff;
+  width: 361px;
+  height: 629px;
+  border-radius: 20px;
+}
+.overview__godlenHeading {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.overview__godlenContent {
+  text-align: center;
+}
+.overview__goldImage {
+  margin-top: 70px;
+}
+.overview__godlenText {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #535875;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.overview__godlenPrice {
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
 .transactions__name {
   font-size: 28px;
   font-style: normal;
@@ -126,6 +426,10 @@ h6 {
 .transactions__button--date {
   border: 1px solid #aeb3cd;
   background-color: #f6f7fa;
+  transition: border 0.3s;
+}
+.transactions__button--date:hover {
+  border: 1px solid #0364ff;
 }
 .transactions__button--go {
   display: block;
@@ -140,6 +444,7 @@ h6 {
 .transactions__button--go:hover {
   border: 1px solid #0364ff;
   color: #0364ff;
+  background: #f6f7fa;
 }
 .transactions__button--editTransactions {
   display: block;
@@ -154,11 +459,17 @@ h6 {
 .transactions__button--editTransactions:hover {
   border: 1px solid #0364ff;
   color: #0364ff;
+  background: #f6f7fa;
 }
 .transactions__button--filter, .transactions__button--export {
   background-color: #fff;
+  border: 1px solid #fff;
   display: flex;
   gap: 10px;
+  transition: border 0.3s;
+}
+.transactions__button--filter:hover, .transactions__button--export:hover {
+  border: 1px solid #0364ff;
 }
 .transactions__exportIcon {
   margin-top: 1px;
@@ -381,21 +692,6 @@ h6 {
     margin-top: 100px;
   }
 }
-.table {
-  width: 100%;
-}
-.table__heading, .table__item {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0px;
-  color: #535875;
-}
-.table__item--name {
-  color: #0f1222;
-}
-
 .button {
   display: block;
   padding: 15px;

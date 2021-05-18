@@ -24,5 +24,27 @@ Route::get('/site/{name?}', function ($name = null) {
     } else if ($name != null) {
         $path = 'site.'.$name;
     return view($path);
-    } 
+    }
 });
+
+// Route::get('/hello', function () {
+//     return `<h1>Hello !</h1>`;
+// });
+
+// Route::get('site/overview', function () {
+//     return view('/overview');
+// });
+
+// Route::get('/about', function () {
+//     return view('pages.about');
+// });
+
+// Route::get('/users/{id}/{name}', function ($id, $name) {
+//     return 'This is user '.$name.' with an id of '.$id;
+// });
+
+// Route::get('/about', function () {
+//     return view('pages.about');
+// });
+
+// php artisan make:controller PagesController
